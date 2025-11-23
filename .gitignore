@@ -1,0 +1,32 @@
+# Çevre değişkenleri (API anahtarları burada - ÇOK ÖNEMLİ!)
+.env
+
+# Üretilen görseller (boyut büyük olur, Git'e yüklemiyoruz)
+generated_images/
+
+# Python cache dosyaları
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# IDE ayarları
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# İşletim sistemi dosyaları
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# özel dosyalar
+Proje 2 AI Görsel Oluşturucu.md
