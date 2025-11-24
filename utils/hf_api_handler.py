@@ -25,36 +25,17 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 # We use this modern approach instead of the old requests.post() method
 from huggingface_hub import InferenceClient
 
-# Get API key from our own config file
-from config.settings import HUGGINGFACE_API_KEY
+# Get API key and model settings from our config file
+# All configuration is centralized in settings.py (Single Source of Truth)
+from config.settings import (
+    HUGGINGFACE_API_KEY,
+    DEFAULT_MODEL,
+    ALTERNATIVE_MODELS
+)
 
 # Import our logging functions
 # This way all operations are written to both console and log file
 from utils.logger import log_info, log_error, log_debug, log_warning
-
-# ============================================
-# MODEL AND PROVIDER TO BE USED
-# ============================================
-# Text-to-image models are large and complex neural networks.
-# There are thousands of models on Hugging Face Hub, we selected the best ones.
-
-# Free-to-use text-to-image models
-# FLUX.1-dev: A powerful model developed by Black Forest Labs
-# Fast, high quality, and free to use
-DEFAULT_MODEL = "black-forest-labs/FLUX.1-dev"
-
-# Provider: The server/platform where the model runs
-# hf-inference: Hugging Face's own inference servers
-DEFAULT_PROVIDER = "hf-inference"
-
-# List of alternative models
-# If default model doesn't work, these models are tried in order
-# FLUX.1-schnell: Faster but slightly lower quality version of FLUX
-# stable-diffusion-xl: Stability AI's popular model
-ALTERNATIVE_MODELS = [
-    "black-forest-labs/FLUX.1-schnell",
-    "stabilityai/stable-diffusion-xl-base-1.0",
-]
 
 
 # ============================================
