@@ -21,15 +21,15 @@ Same prompt, different styles - see how AI interprets your description in variou
 
 | Photorealistic | Digital Art | Oil Painting |
 |:---:|:---:|:---:|
-| ![Photorealistic](images/style_photorealistic.png) | ![Digital Art](images/style_digital.png) | ![Oil Painting](images/style_oil.png) |
+| ![Photorealistic](images/style_photorealistic.png) | ![Digital Art](images/style_digital_art.png) | ![Oil Painting](images/style_oil_painting.png) |
 
 | Anime | Comic Book | 3D Render |
 |:---:|:---:|:---:|
-| ![Anime](images/style_anime.png) | ![Comic Book](images/style_comic.png) | ![3D Render](images/style_3d.png) |
+| ![Anime](images/style_anime.png) | ![Comic Book](images/style_comic_book.png) | ![3D Render](images/style_3d_render.png) |
 
 ## Gallery View
 
-![Gallery](images/screenshot_gallery.png)
+![Gallery](images/gallery.png)
 
 ## Tech Stack
 
