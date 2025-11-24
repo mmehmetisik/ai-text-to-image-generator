@@ -7,7 +7,6 @@
 # --- LIBRARY IMPORTS ---
 
 import os  # Provides interaction with the operating system. We'll use it to read environment variables.
-
 from dotenv import load_dotenv  # Loads sensitive information (like API keys) from .env file into Python.
 
 # --- LOAD .ENV FILE ---
@@ -27,11 +26,20 @@ HUGGINGFACE_API_KEY = os.getenv("HUGGINGFACE_API_KEY")
 # We'll append the model name to the end of this URL.
 HUGGINGFACE_API_URL = "https://router.huggingface.co/hf-inference/models/"
 
-# --- AI MODEL TO BE USED ---
+# --- AI MODELS TO BE USED ---
 
-# Stable Diffusion 2.1: A powerful AI model that generates images from text descriptions.
-# An open-source model developed by stabilityai company.
-DEFAULT_MODEL = "stabilityai/stable-diffusion-2-1"
+# FLUX.1-dev: A powerful text-to-image model developed by Black Forest Labs.
+# Fast, high-quality and available for free use on Hugging Face.
+DEFAULT_MODEL = "black-forest-labs/FLUX.1-dev"
+
+# Alternative models list
+# If the default model doesn't work, these models will be tried in order.
+# FLUX.1-schnell: Faster but slightly lower quality version of FLUX
+# stable-diffusion-xl: Popular model from Stability AI
+ALTERNATIVE_MODELS = [
+    "black-forest-labs/FLUX.1-schnell",
+    "stabilityai/stable-diffusion-xl-base-1.0",
+]
 
 # --- IMAGE SIZE OPTIONS ---
 
