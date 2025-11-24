@@ -2,7 +2,7 @@
 
 A web application that generates images from text descriptions using Hugging Face's AI models. Built with Streamlit for an interactive user experience.
 
-![Main Interface](images/screenshot_main.png)
+![Main Interface](images/main.png)
 
 ## Features
 
