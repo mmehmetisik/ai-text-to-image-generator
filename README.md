@@ -124,6 +124,6 @@ This project is open source and available under the MIT License.
 
 **Mehmet Işık**
 
-- GitHub: (https://github.com/mmehmetisik)
-- LinkedIn: (https://www.linkedin.com/in/mehmetisik4601/)
-- Kaggle: (https://www.kaggle.com/mehmetisik)
+- 📝 Medium: [@mmehmetisik](https://medium.com/@mmehmetisik)
+- 💼 LinkedIn: [Mehmet Işık](https://www.linkedin.com/in/mehmetisik4601/)
+- 📊 Kaggle: [mehmetisik](https://www.kaggle.com/mehmetisik)
